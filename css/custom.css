@@ -1,0 +1,326 @@
+.b-article{
+    font-family: "Roboto Regular", arial;
+}
+table {
+    font-family: "Roboto Regular", arial;
+    font-size: 14px;
+    border-spacing: 0;
+}
+th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 7px 20px;
+}
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+th:first-child, td:first-child {
+    text-align: left;
+}
+th:first-child {
+    border-top-left-radius: 10px;
+}
+th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+td {
+    padding: 10px 9px;
+    background: rgba(53, 51, 51, 0.1);
+}
+
+tr td:last-child {
+    border-right: none;
+}
+.wrapper-table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table#da_table {
+    border: 1px solid #E5E5E5;
+}
+
+.color_td_title{
+    padding: 2px 13px;
+}
+.color_td_title{
+    font-size: 35px;
+}
+.color_td_title.item1{
+    font-size: 20px;
+    font-family: "Roboto Regular", arial;
+}
+table#da_table {
+    width: 804px;
+    box-shadow: 0px 2px 4px;
+}
+
+td.selected:nth-child(3){
+    background: url(../img/stomach-icon.png) center no-repeat;
+    background-size: 29px 29px;
+    background-color: #eaeaea;
+}
+td.selected:nth-child(4){
+    background: url(../img/stomach-icon.png) center no-repeat;
+    background-size: 29px 29px;
+    background-color: #eaeaea;
+}
+td.selected:nth-child(5){
+    background: url(../img/heart-icon.png) center no-repeat;
+    background-size: 29px 29px;
+    background-color: #eaeaea;
+}
+td.selected:nth-child(6){
+    background: url(../img/nervous-system-icon.png) center no-repeat;
+    background-size: 29px 29px;
+    background-color: #eaeaea;
+}
+td.selected:nth-child(7){
+    background: url(../img/immunity-icon.png) center no-repeat;
+    background-size: 29px 29px;
+    background-color: #eaeaea;
+}
+td.selected:nth-child(8){
+    background: url(../img/light-icon.png) center no-repeat;
+    background-size: 29px 29px;
+    background-color: #eaeaea;
+}
+td.selected:nth-child(9){
+    background: url(../img/bladder-icon.png) center no-repeat;
+    background-size: 29px 29px;
+    background-color: #eaeaea;
+}
+td.selected:nth-child(10){
+    background: url(../img/endocrine-system-icon.png) center no-repeat;
+    background-size: 29px 29px;
+    background-color: #eaeaea;
+}
+td.selected:nth-child(11){
+    background: url(../img/locomotive-icon.png) center no-repeat;
+    background-size: 29px 29px;
+    background-color: #eaeaea;
+}
+/*radio
+
+ */
+.checkbox {
+    display: none;
+}
+.checkbox-custom{
+    width: 14px;
+    height: 14px;
+    border: 1px solid #898989;
+    position: relative;
+}
+
+.checkbox:checked + .checkbox-custom::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #413548;
+}
+
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* btn*/
+.btn-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Regular", arial;
+}
+
+span#result_button {
+    font-size: 16px;
+    width: 293px;
+    height: 61px;
+    background: #FFE4DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 54px;
+    cursor: pointer;
+}
+
+span#result_button:hover {
+    background: #ffe4dd8c;
+}
+/*result*/
+.wrapper-result {
+    display: none;
+}
+
+.wrapper-result.active{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.wrapper-result .results{
+    width: 804px;
+    background: rgba(53, 51, 51, 0.1);
+    box-shadow: 0px 2px 4px;
+}
+
+.wrapper-result .content{
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.wrapper-result .content .square_div{
+    padding-right: 10px;
+    width: 48px;
+}
+
+.wrapper-result .content .content-text{
+    width: 600px;
+}
+.wrapper-result .content .content-text .logo{
+    font-size: 19px;
+    color: #3A3838;
+}
+.wrapper-result .content .content-text span.text-result {
+    color: #898f82;
+    background: #eaeaea;
+    font-size: 19px;
+}
+
+.wrapper-result .content .content-text .text{
+    color: #000000;
+    font-size: 14px;
+}
+.wrapper-result .content .content-text a.products_link {
+    color: #898f82;
+}
+
+
+.wrapper-result .content.border_div1 .square_div.good{
+    background: url(../img/stomach1.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div1 .square_div.satisfactorily{
+    background: url(../img/stomach2.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div1 .square_div.nosatisfactorily{
+    background: url(../img/stomach3.png) no-repeat;
+    background-size: 48px 48px;
+}
+
+.wrapper-result .content.border_div2 .square_div.good{
+    background: url(../img/stomach1.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div2 .square_div.satisfactorily{
+    background: url(../img/stomach2.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div2 .square_div.nosatisfactorily{
+    background: url(../img/stomach3.png) no-repeat;
+    background-size: 48px 48px;
+}
+
+.wrapper-result .content.border_div3 .square_div.good{
+    background: url(../img/heart1.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div3 .square_div.satisfactorily{
+    background: url(../img/heart2.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div3 .square_div.nosatisfactorily{
+    background: url(../img/heart3.png) no-repeat;
+    background-size: 48px 48px;
+}
+
+.wrapper-result .content.border_div4 .square_div.good{
+    background: url(../img/nervous-system1.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div4 .square_div.satisfactorily{
+    background: url(../img/nervous-system2.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div4 .square_div.nosatisfactorily{
+    background: url(../img/nervous-system3.png) no-repeat;
+    background-size: 48px 48px;
+}
+
+.wrapper-result .content.border_div5 .square_div.good{
+    background: url(../img/immunity1.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div5 .square_div.satisfactorily{
+    background: url(../img/immunity2.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div5 .square_div.nosatisfactorily{
+    background: url(../img/immunity3.png) no-repeat;
+    background-size: 48px 48px;
+}
+
+.wrapper-result .content.border_div6 .square_div.good{
+    background: url(../img/light1.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div6 .square_div.satisfactorily{
+    background: url(../img/light2.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div6 .square_div.nosatisfactorily{
+    background: url(../img/light3.png) no-repeat;
+    background-size: 48px 48px;
+}
+
+.wrapper-result .content.border_div7 .square_div.good{
+    background: url(../img/bladde1.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div7 .square_div.satisfactorily{
+    background: url(../img/bladde2.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div7 .square_div.nosatisfactorily{
+    background: url(../img/bladde3.png) no-repeat;
+    background-size: 48px 48px;
+}
+
+.wrapper-result .content.border_div8 .square_div.good{
+    background: url(../img/endocrine-system1.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div8 .square_div.satisfactorily{
+    background: url(../img/endocrine-system2.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div8 .square_div.nosatisfactorily{
+    background: url(../img/endocrine-system3.png) no-repeat;
+    background-size: 48px 48px;
+}
+
+.wrapper-result .content.border_div9 .square_div.good{
+    background: url(../img/locomotive1.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div9 .square_div.satisfactorily{
+    background: url(../img/locomotive2.png) no-repeat;
+    background-size: 48px 48px;
+}
+.wrapper-result .content.border_div9 .square_div.nosatisfactorily{
+    background: url(../img/locomotive3.png) no-repeat;
+    background-size: 48px 48px;
+}
